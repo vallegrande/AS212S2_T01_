@@ -2,35 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="estyles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://file.myfontastic.com/ZYkQtQVuZARWpruX9hayhA/icons.css" rel="stylesheet">    
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" id="icono" class="icono">Menu</a>
-            <div class="enlaces uno" id ="enlaces" >
-                <a href="">Promociones</a><br>
-                <a href="">Reservas</a><br>
-                <a href="">locales</a><br>
-                <a href="">contactos</a><br>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="testos">
-                <h1>Polleria el caribe</h1>
-                <h2>Hacemos un mundo más feliz</h2>
-            </div>
-            <img src="pollos.jpg" alt="">
+    <header class="header">
+        <div class="contenedor">
+            <img src="img/EL CARIBE.png" class="logo">
+                <span class="icon-menu" id="btn-menu"></span>
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link">Carta</a></li>
+                        <li class="menu__item"><a class="menu__link">Promociones</a></li>
+                        <li class="menu__item"><a class="menu__link">Promociones</a></li>
+                        <li class="menu__item"><a class="menu__link">Nosotros</a></li>
+                        <li class="menu__item"><a class="menu__link">Pride Online</a></li>
+
+                    </ul>
+                </nav>
         </div>
     </header>
-    <div class="wave">
-
+    <div class="banner">
+        <img src="img/pollito B.jpg" >
+        <div class="contenedor">
+            <h1 class="banner__titulo">POLLERIA EL CARIBE </h1>    
+            <P class="banner__txt">Bienvenidos a Nuestro Restaurante</P>
+        </div>
     </div>
+
+    <main class="main">
+        <section class="info">
+            <div class="contenedor">
+                 <article class="info__columna">
+                    <img src="img/primeraimg.jpg" class="info__img">
+                    <h2 class="info__titulo">TITULO1</h2>
+                    <p class="info__txt"></p>
+
+                 </article>
+                 <article class="info__columna">
+                    <img src="img/segundaimg.jpg" class="info__img">
+                    <h2 class="info__titulo">TITULO2</h2>
+                    <p class="info__txt"></p>
+
+                 </article>
+                 <article class="info__columna">
+                    <img src="img/img3.jpg" class="info__img">
+                    <h2 class="info__titulo">TITULO3</h2>
+                    <p class="info__txt"></p>
+
+                 </article>
+            </div>
+        </section>
+    </main>
+    <!-- Site footer -->
+ <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+    <script src="js/menu.js"></script>
+
+<!-------------------Cursor custom------------------------------>
+    <style type="text/css">
+      *{
+          cursor:none;
+          cursor: none;
+      }
+  </style>       
+
+<div id="cursor">
+  <img class="cursorr" src="/Polleria El Caribe/img/cursor.png" />
+</div>
+    
+  <script type="text/javascript">
+      var cursor = document.getElementById(
+          'cursor');
+      document.addEventListener('mousemove'
+           , function(e){
+          var x = e.clientX;
+          var y = e.clientY;
+          cursor.style.left = x + "px"
+          cursor.style.top = y + "px"
+      });
+  </script>
+  
 
 </body>
 </html>
+
