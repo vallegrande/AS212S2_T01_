@@ -118,28 +118,28 @@
     <script src="js/menu.js"></script>
 
 <!-------------------Cursor custom------------------------------>
-    <style type="text/css">
-      *{
-          cursor:none;
-          cursor: none;
-      }
-  </style>       
+<style type="text/css">
+  *{
+      cursor:none;
+      cursor: none;
+  }
+</style>       
 
 <div id="cursor">
-  <img class="cursorr" src="/img/cursor.png" />
+<img class="cursorr" src="/img/cursor.png" />
 </div>
-    
-  <script type="text/javascript">
-      var cursor = document.getElmentementById(
-          'cursor');
-      document.addEventListener('mousemove'
-           , function(e){
-          var x = e.clientX;
-          var y = e.clientY;
-          cursor.style.left = x + "px"
-          cursor.style.top = y + "px"
-      });
-  </script>
+
+<script type="text/javascript">
+  var cursor = document.getElementById(
+      'cursor');
+  document.addEventListener('mousemove'
+       , function(e){
+      var x = e.clientX;
+      var y = e.clientY;
+      cursor.style.left = x + "px"
+      cursor.style.top = y + "px"
+  });
+</script>
   
 
 </body>
