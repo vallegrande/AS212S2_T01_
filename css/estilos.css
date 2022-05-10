@@ -257,15 +257,9 @@ body{
 }
 
 #cursor {
-  width: 25px;
-  height: 25px;
-  border: 5px double rgb(43, 26, 1) ;
-  box-sizing: border-box;
   transition: 0.01s;
-  transform: translate(-50%,-50%);
   position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
+
 }
 
 img.cursorr{
