@@ -13,6 +13,7 @@ body{
     height: 70px;
     position: relative;
     top: -60px;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7))
 }
 .contenedor {
     width: 100%;
@@ -20,15 +21,17 @@ body{
 }
 /*------------------------------Estilos header----------------------------------*/
 .header {
-    height: 60px;
-    background-color: #333 ;
+    height: 75px;
+    background-color: rgb(32, 32, 32) ;
+
 }
 .header .contenedor{
     display: flex;
     justify-content: space-between;
+    
 }
 .logo,.icon-menu {
-    margin: 50px;
+    margin: 63px;
     color: #fff;
 }
 .icon-menu{
@@ -36,7 +39,8 @@ body{
     width: 40px;
     height: 40px;
     font-size: 30px;
-    background: #999;
+    background: rgba(107, 75, 4, 0.644);
+    border-bottom-style: double;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -73,10 +77,16 @@ body{
 .muestrate{
     left: 0;
 }
- /*----------------------Estilos del banner */
+ /*----------------------Estilos del banner --------*/
 .banner img{
     width: 100%;
-}
+    background: black;
+    filter: brightness(65%);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    height: 700px;
+    position: relative;
+  }
 .banner{
     position: relative;
 }
@@ -85,20 +95,60 @@ body{
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    text-align: center;
+    text-align: CENTER;
     width: 100%;
     color: #fff;
+  
+}
+
+.banner__titulo {
+  text-shadow: 6px 5px 2px black;
+  text-align: center;
+  top: 10px;
+  position: relative;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+  font-style: italic;
+  -webkit-text-stroke: 3px rgb(255, 255, 255);
+  color: transparent;
+  filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7))
+  
+
+}
+
+.banner__txt {
+  text-shadow: 6px 5px 3px rgb(32, 30, 30);
+  top: 10px;
+  position: relative;
+  filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7))
+  
+}
+
+
+/*-----------tamaños de imagenes -----------*/
+
+
+
+img.info__img{
+  max-width: 500px;
+  max-height: 350px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  margin: 10px,
+
 }
 
 /* ----------------partefinal------------- */
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color: rgb(14, 13, 13);
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:#737373;
+  padding-top: 30px;
 }
 .site-footer hr
 {
@@ -257,13 +307,16 @@ body{
 }
 
 #cursor {
-  transition: 0.01s;
-  position: fixed;
 
+  transition: 0s;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 img.cursorr{
   max-width: 45px;
   max-height: 45px;
-  filter: drop-shadow(0 0 1000px black);
+  filter: drop-shadow(0 4px 5px rgba(29, 27, 27, 0.7))
 }
