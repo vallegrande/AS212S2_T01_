@@ -104,7 +104,7 @@ body{
 .banner__titulo {
   text-shadow: 6px 5px 2px black;
   text-align: center;
-  top: 10px;
+  top: -20px;
   position: relative;
   padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif
@@ -118,10 +118,22 @@ body{
 
 .banner__txt {
   text-shadow: 6px 5px 3px rgb(32, 30, 30);
-  top: 10px;
+  top: -20
+  px;
   position: relative;
-  filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7))
-  
+  filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7));
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*-------- CONTENIDO-----*/
+
+
+.info__titulo1 {
+  text-align: right ;
+  top: -20px;
+}
+.info__txt1 {
+  text-align: right;
 }
 
 
@@ -320,3 +332,5 @@ img.cursorr{
   max-height: 45px;
   filter: drop-shadow(0 4px 5px rgba(29, 27, 27, 0.7))
 }
+
+
