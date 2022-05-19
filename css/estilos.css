@@ -37,6 +37,7 @@
     color: rgb(0, 0, 0);
     padding: 30px;
     font-size: 21px;
+    font-weight: bold;
 }
 .menu__link li{
     display: inline;
@@ -61,7 +62,7 @@
 }
 .slider ul{
     display: flex;
-    animation: cambio 25s infinite alternate cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    animation: cambio 30s infinite alternate cubic-bezier(0.785, 0.135, 0.15, 0.86);
     width: 400%;
 }
 .slider li{
@@ -92,6 +93,31 @@
     height: 100vh;
 }
 }
+
+.banner__titulo {
+    text-shadow: 6px 5px 2px black;
+    text-align: center;
+    top: -20px;
+    position: relative;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-style: italic;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+    color: transparent;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7))
+    
+  
+  }
+  
+  .banner__txt {
+    text-shadow: 6px 5px 3px rgb(32, 30, 30);
+    top: -20
+    px;
+    position: relative;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7));
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
 
 /*-------------------- Estilos de main---------------------------*/
 .main h1 {
@@ -132,11 +158,12 @@
     padding-top:1000px;
     text-align: center;
     
+    
 }
 .mapa h3{
     text-align: center;
     font-size: 30px;
-    color: rgb(4, 0, 63)
+    color: rgb(4, 0, 63);
     
 }
 .mapa p{
@@ -172,4 +199,73 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     background-color: #f53a33;
     border-radius: 10px;
+
   }
+
+/*---------- CARGAR ---------*/
+
+.contenedorr {
+    position: fixed;
+    width: 209vh;
+    height: 100vh;
+    background-color: #f53a33;
+    z-index: 9999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease-in-out;
+}
+.loader {
+    height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.linea {
+    width: 6px;
+    height: 95px;
+    background: white;
+    margin: 0 3px;
+    border-radius: 4px;
+    animation: loader .8s infinite;
+}
+
+.linea:nth-child(2){
+    animation-delay: .1s;
+}
+
+.linea:nth-child(3){
+    animation-delay: .2s;
+}
+
+.linea:nth-child(4){
+    animation-delay: .3s;
+}
+
+.linea:nth-child(5){
+    animation-delay: .4s;   
+}
+
+.linea:nth-child(6){
+    animation-delay: .5s;
+}
+
+.linea:nth-child(7){
+    animation-delay: .7s;
+}
+
+.linea:nth-child(8){
+    animation-delay: .8s;
+}
+
+@keyframes loader {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 95px;
+    }
+    100% {
+        height: 0;
+    }
+}

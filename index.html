@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Primera Pagina Wed</title>
+    <title>Mi Primera Pagina Web</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+    <div class="contenedorr">
+        <div class="loader">
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+        </div>
+    </div>
     <header class="header">
         <div class="contenedor">
             <img src="img/logo002.png" class="logos">
@@ -15,7 +27,7 @@
                     <ul class="menu__link">
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Quienes Somos</a></li>   
-                        <li><a href="#">Contactos</a></li>                          
+                        <li><a href="#contacto">Contactos</a></li>                          
                         <li><a href="#">Promociones</a></li>
                     </ul>
                 </nav>
@@ -37,10 +49,7 @@
                 <img src="/img/slider4.jpg">
             </li>
         </ul>
-        <div class="contenedor">
-            <img href="#" src="img/compra_aqui.png" >
-        </div>
-        
+
     </div>
     <main class="main">
     <section class="info">
@@ -94,8 +103,11 @@
             </div>
         </div>
     </section>
+
+<!-----------------------------------MAPA------------------------>
+
     <div class="mapa">
-        <div class="contenedor">
+        <a name="contacto" <div class="contenedor"></a>
             <h3>¿DONDE ESTAMOS?</h3>
             <P>Jr. San Agustín 125, San Vicente de Cañete 15701</P>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.3452538612873!2d-76.38819238255616!3d-13.077291899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ff909a906d3b1%3A0xb718b673f3fa0cf2!2sPolleria%20Caribe!5e0!3m2!1ses!2spe!4v1652733013679!5m2!1ses!2spe" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -123,5 +135,10 @@
         cursor.style.top = y + "px"
     });
     </script>
+
+<!---------------------------------- CARGA ------------------------------------->
+    <script src="/js/script.js"></script>
+
+
 </body>
 </html>
