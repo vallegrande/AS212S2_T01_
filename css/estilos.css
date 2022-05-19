@@ -10,6 +10,7 @@
     height: 60px;
     position: relative;
     left: 50px;
+    bottom: -5px;
 }
 .contenedor {
     width: 100%;
@@ -17,7 +18,7 @@
 }
 /*-------------------- Estilos de Header---------------------------*/
 .header {
-    height: 60px;
+    height: 70px;
     background: rgb(255, 255, 255);
 }
 .header .contenedor {
@@ -35,7 +36,7 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 30px;
-    font-size: 20px;
+    font-size: 21px;
 }
 .menu__link li{
     display: inline;
@@ -46,18 +47,50 @@
 }
 
 
-/*-------------------- Estilos de Banner---------------------------*/
-.banner img{
+/*-------------------- Estilos de Banner slider---------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 25s infinite alternate cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    width: 400%;
+}
+.slider li{
     width: 100%;
+    list-style: none;
 }
-.banner{
-    position: relative;
+.slider img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    padding-bottom: 100px;
 }
-.banner .contenedor img{
-    width: 20%;
-    position: relative;
-    left: 69%;
-    top: -150px;
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
 }
 
 /*-------------------- Estilos de main---------------------------*/
@@ -67,9 +100,10 @@
     text-align: center;
     height: auto;
     font-size:60px;
+    padding-top: 30px;
 }
 .main  .galeria {
-    margin: 20px 49px;
+    margin: 20px 75px;
     box-shadow: 0 4px 8px 0 lightskyblue,0 6px 20px 0 rgba(0,0,0,0.19);
     float: left;
     width: 300px;
@@ -82,7 +116,7 @@
 }
 .main .galeria:hover{
     border: 1px solid lightcoral;
-    transform:rotate(-10deg);
+    transform: rotate(-10deg);
 }
 .main .pie{
     text-align: center;
@@ -94,18 +128,22 @@
 /*-------------------- Estilos de mapa---------------------------*/
 .mapa{
     position: flex;
-    width: 111%;
+    width: 100%;
     padding-top:1000px;
+    text-align: center;
+    
 }
 .mapa h3{
     text-align: center;
     font-size: 30px;
     color: rgb(4, 0, 63)
+    
 }
 .mapa p{
     text-align: center;
     padding: 0.5em;
     font-size: 18px;
+    padding-bottom: 20px;
 }
 /*-------------------- Estilos de cursor ---------------------------*/
 #cursor {
@@ -119,5 +157,19 @@
     img.cursorr{
     max-width: 45px;
     max-height: 45px;
-    filter: drop-shadow(0 4px 5px rgba(29, 27, 27, 0.7))
+    filter: drop-shadow(0 4px 5px rgba(238, 141, 76, 0.952))
 }
+
+/*------- Barra desplazamiento custom -------*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: rgba(253, 253, 253, 0.4);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #f53a33;
+    border-radius: 10px;
+  }
