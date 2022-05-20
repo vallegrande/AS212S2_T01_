@@ -206,14 +206,22 @@ body::-webkit-scrollbar {
 
 .contenedorr {
     position: fixed;
-    width: 209vh;
-    height: 100vh;
+    width: 210vh;
+    height: 120vh;
     background-color: #f53a33;
     z-index: 9999999999999;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .7s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+.loader-icon img {
+    position: fixed;
+    filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.952));
+    top: 180px;
+    left: 550px;
+    width: 20%;
+    height: auto;
 }
 .loader {
     height: 95px;
@@ -226,7 +234,7 @@ body::-webkit-scrollbar {
     height: 95px;
     background: white;
     margin: 0 3px;
-    border-radius: 4px;
+    border-radius: 10px;
     animation: loader .8s infinite;
 }
 
