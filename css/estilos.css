@@ -7,6 +7,8 @@
     font-family: sans-serif;
 }
 
+
+
 .logos {
     width: auto;
     height: 64px;
@@ -19,17 +21,21 @@
 .contenedor {
     width: 100%;
     margin: auto;
+
 }
 
 /*-------------------- Estilos de Header---------------------------*/
 .header {
     height: 70px;
     background: rgb(255, 255, 255);
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+
 }
 
 .header .contenedor {
     display: flex;
     justify-content: space-between;
+
 }
 
 .nav .menu__link {
@@ -60,7 +66,6 @@
 
 
 /*-------------------- Estilos de Banner slider---------------------------*/
-
 * {
     margin: 0;
     padding: 0;
@@ -83,7 +88,7 @@
     top: 40px;
     position: relative;
     padding: 10px;
-    -webkit-text-stroke: 1.3px rgb(255, 250, 250);
+    -webkit-text-stroke: 1.3px rgb(255, 255, 255);
     color: transparent;
     filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.7));
     text-shadow: 3px 9px 15px rgb(0, 0, 0);
@@ -106,7 +111,7 @@
 
 .slider ul {
     display: flex;
-    animation: cambio 30s infinite alternate cubic-bezier(0.23, 0.1, 0.320, 1);
+    animation: cambio 30s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
     width: 400%;
 }
 
@@ -165,7 +170,9 @@
     }
 }
 
+
 /*-------------------- Estilos de main---------------------------*/
+
 .main h1 {
     color: black;
     text-shadow: 1px 2px 2px rgb(255, 255, 255), 0 0 25px rgba(255, 0, 0, 0.568), 0 0 5px rgb(255, 0, 0);
@@ -173,6 +180,7 @@
     height: auto;
     font-size: 60px;
     padding-top: 50px;
+
 }
 
 .main .galeria {
@@ -180,13 +188,13 @@
     box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float: left;
     width: 300px;
-
+    border-radius: 13px;
 }
 
 .main .galeria img {
     width: 100%;
     height: auto;
-
+    border-radius: 13px;
 }
 
 .main .galeria:hover {
@@ -197,11 +205,12 @@
 
 .main .pie {
     text-align: center;
-    text-shadow: 2px 2px 5px purple;
-    font-family: Menlo, monospace;
+    text-shadow: 2px 2px 5px rgb(236, 253, 0);
+    font-family: "cursiva";
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
+
 
 
 /*-------------------- Estilos de mapa---------------------------*/
@@ -220,7 +229,7 @@
 .mapa h3 {
     text-align: center;
     font-size: 30px;
-    color: rgb(4, 0, 63);
+    color: rgb(0, 0, 0);
 
 }
 
@@ -230,6 +239,26 @@
     font-size: 18px;
     padding-bottom: 20px;
 }
+
+.contacto_ubi {
+    color: #EB3349;
+}
+
+
+/*----------------------- Estilos del footer -----------------------*/
+
+.site-footer{
+    background-color: #5D26C1;
+}
+
+
+
+
+
+
+
+
+
 
 /*-------------------- Estilos de cursor ---------------------------*/
 #cursor {
