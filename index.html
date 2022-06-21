@@ -6,7 +6,12 @@
     <title>Mi Primera Pagina Web</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css+++/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
 </head>
 
 <body>
@@ -33,7 +38,7 @@
                     <li><a href="#Menu_Menu">Menu</a></li>
                     <li><a href="#">Quienes Somos</a></li>
                     <li><a href="#contacto">Contactos</a></li>
-                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#Pedido">Pedidos</a></li>
                 </ul>
             </nav>
         </div>
@@ -114,22 +119,52 @@
                 </div>
             </section>
     </section>
-    <!---------------------Articulos------------------------------>
 
-    </main>
-    </div>
-
+    
     <!-----------------------------------MAPAs------------------------>
     <div class="mapa">
         <a name="contacto"> </a>
         <h3 class="contacto_ubi">¿DONDE ESTAMOS?</h3>
-        <P>Jr. San Agustín 125, San Vicente de Cañete 15701</P>
+        <P class="contacto_ubi">Jr. San Agustín 125, San Vicente de Cañete 15701</P>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.3452538612873!2d-76.38819238255616!3d-13.077291899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ff909a906d3b1%3A0xb718b673f3fa0cf2!2sPolleria%20Caribe!5e0!3m2!1ses!2spe!4v1652733013679!5m2!1ses!2spe"
             width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
+    <!----------------Pedido--------------------->
+    <div id="overview">
+    	<section class="order" id="order">
+        	<h1 class="heading"><span>ordena</span> tu pedido</h1>
+        	<div id="form" class="row">
+            	<form class="form">
+                	<div class="inputBox">
+                    	<input id="USERPED" placeholder="Nombre" type="text" class="form-control" />
+                    	<input id="EMAUSPED" placeholder="Correo" type="text" class="form-control" />
+                	</div>
+                	<div class="inputBox">
+                    	<input id="CELUSPED" placeholder="Celular" type="text" class="form-control" />
+                    	<input id="FOODPED" placeholder="Pedido" type="text" class="form-control" />
+                	</div>
+                	<textarea id="MSGPED" placeholder="Mensaje" cols="30" rows="10" class="form-control"></textarea>
+                	<button id="btnCrear" type="submit" class="btn btn-secondary">
+                    	Ordenar ahora
+                	</button>
+            	</form>
+        	</div>
+    	</section>
+	</div>
+	<section class="copy" style="margin-top: 2em;">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12">
+                	<p>
+                    	<strong>Copyright &copy; 2022. Elaborado por: Fernando Canales Rodríguez</strong>
+                	</p>
+            	</div>
+        	</div>
+    	</div>
+	</section>
 
 
     <!----------------FOOTER---------------------------------->
@@ -179,8 +214,8 @@
 </script>
 
 <!---------------------------------- CARGA ------------------------------------->
-
-<script src="/js/script.js"></script>
+	<script src="registro.js"></script>
+<script src="/js+/script.js"></script>
 
 
 </body>
