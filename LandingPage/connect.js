@@ -1,4 +1,3 @@
-
 var express = require("express");
 var mysql = require("mysql");
 var app = express();
@@ -8,28 +7,28 @@ app.use(express.json());
 app.use(cors());
 
 var conexion = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "admin",
-    database: "polleriacaribe",
+  host: "localhost",
+  user: "root",
+  password: "admin",
+  database: "dbrestaurante",
 });
+
 
 conexion.connect(function (error) {
     if (error) {
-        throw error;
+      throw error;
     } else {
-        console.log("Conexión exitosa");
+      console.log("Conexión exitosa");
     }
-});  
+  });
+  
+  const puerto = process.env.PUERTO || 3000;
 
-const puerto = process.env.PUERTO || 3000;
-
-app.listen(puerto, function () {
+  app.listen(puerto, function () {
     console.log("Servidor funcionando en puerto: " + puerto);
-});
-
-
-app.post("/api/pedido", (req, res) => {
+  });
+  
+  app.post("/api/pedido", (req, res) => {
 	let data = {
     	userped: req.body.USERPED,
     	emausped: req.body.EMAUSPED,
@@ -47,7 +46,3 @@ app.post("/api/pedido", (req, res) => {
   	}
 	});
   });
-
-
-
-
