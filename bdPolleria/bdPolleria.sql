@@ -16,7 +16,6 @@ CREATE TABLE CLIENTE (
     CELCLI char(9) NOT NULL,
     GMLCLI varchar(50) NOT NULL,
     CODUBIG char(9) NOT NULL,
-    USECLI varchar(200) NOT NULL,
     CONSTRAINT CLIENTE_pk PRIMARY KEY (CODCLI)
 );
 
@@ -29,7 +28,6 @@ CREATE TABLE EMPLEADO (
     CELEMP char(9) NOT NULL,
     GMLEMP varchar(50) NOT NULL,
     CODUBIG char(9) NOT NULL,
-    USEEMP varchar(200) NOT NULL,
     CONSTRAINT EMPLEADO_pk PRIMARY KEY (CODEMP)
 );
 
@@ -104,9 +102,54 @@ ALTER TABLE VENTA ADD CONSTRAINT VENTA_EMPLEADO FOREIGN KEY VENTA_EMPLEADO (CODE
 
 /*---------------------------------- INSERCION DE DATOS ------------------------------*/
 
+/* Insertar datos ubigeo */
+INSERT INTO UBIGEO
+(CODUBIG, PROUBI, DEPUBI, DISUBI)
+VALUES
+('190000001','Cañete','Lima','Lunahuana'),
+('190000002','Cañete','Lima','SanVicente'),
+('190000003','Cañete','Lima','Imperial'),
+('190000004','Cañete','Lima','Asia'),
+('190000005','Cañete','Lima','NuevoImperial');
 
 
+/* Insertar datos PRODUCTO */
+INSERT INTO PRODUCTO
+(CODPRO, NOMPRO, CATPRO, DESPRO, PREPRO)
+VALUES
+('PR0000001','Chaufa','C','PorcionDeArroz','10.00'),
+('PR0000002','Un cuarto de Pollo a la brasa','C','Papa y Arroz y Pollo y Ensalada','10.00'),
+('PR0000003','Mostrito','C','Papa y Arroz y Pollo y Ensalada','12.00'),
+('PR0000004','Lomo saltado','C','Papa y Arroz y Pollo y Ensalada','10.00'),
+('PR0000005','Cerveza Pilsen','B','Botella Cerveza 600ml','10.00'),
+('PR0000006','Caldo de Gallina','C','2 huevos, presa de gallita, fideos,papa huayro','10.00'),
+('PR0000007','Gaseosa 1Litro','B','1L Gaseosa','6.00'),
+('PR0000008','3Litro INKA COLA','B','Gaseosa 3L','15.00');
 
+
+/* Insertar datos EMPLEADO */
+INSERT INTO EMPLEADO
+(CODEMP, DNIEMP, NOMEMP, APEEMP, CELEMP, GMLEMP, CODUBIG)
+VALUES
+('DE0000001','73183575','Pedro Hugo','Porras Luyo','986062248','pedro.porras@vallegrande.edu.pe','190000001'),
+('DE0000002','75849414','Fabio Alonso','Martel Antonio','933462615','fabio.martel@vallegrande.edu.pe','190000002'),
+('DE0000003','45849584','Cinthia','Mayuri Chamorro','952194167','cinthia.mayuri@vallegrande.edu.pe','190000002'),
+('DE0000004','76564965','Edy Anthony','Beingolea Castro','952194166','edy.beingolea@vallegrande.edu.pe','190000002');
+
+/* Insertar datos CLIENTE */
+INSERT INTO CLIENTE
+(CODCLI, DNICLI, NOMCLI, APECLI, CELCLI, GMLCLI, CODUBIG)
+VALUES
+('CL0000001','73183575','Pedro Hugo','Porras Luyo','986062248','pedro.porras@vallegrande.edu.pe','190000001'),
+('CL0000002','75849414','Fabio Alonso','Martel Antonio','933462615','fabio.martel@vallegrande.edu.pe','190000002'),
+('CL0000003','45849584','Cinthia','Mayuri Chamorro','952194167','cinthia.mayuri@vallegrande.edu.pe','190000002'),
+('CL0000004','76564965','Edy Anthony','Beingolea Castro','952194167','edy.beingolea@vallegrande.edu.pe','190000002');
+
+/* Listar registros tablas maestras */
+SELECT * FROM CLIENTE;
+SELECT * FROM PRODUCTO;
+SELECT * FROM EMPLEADO;
+SELECT * FROM UBIGEO;
 
 
 /*---------------------------------- CREACION DE TABLA PEDIDO ------------------------------*/
