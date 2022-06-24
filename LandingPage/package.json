@@ -1,0 +1,27 @@
+{
+  "name": "as212s2_t01_pouletmont",
+  "version": "1.0.0",
+  "description": "POLLERIA (Edy BEINGOLEA | Fabio MARTEL | Cinthia MAYURI | Pedro PORRAS)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon connect.js"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vallegrande/AS212S2_T01_POULETMONT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vallegrande/AS212S2_T01_POULETMONT/issues"
+  },
+  "homepage": "https://github.com/vallegrande/AS212S2_T01_POULETMONT#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
