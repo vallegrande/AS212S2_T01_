@@ -166,7 +166,7 @@ CREATE TABLE Pedido
 );
 
 /* Insertar registros */
-INSERT INTO PEDIDO
+INSERT INTO Pedido
 (USERPED, EMAUSPED, CELUSPED, FOODPED, MSGPED)
 VALUES
 ('José Ramírez', 'jose.ramirez@outlook.com', '974815236', 'Arroz con Pollo', 'Por favor enviar a la dirección Av. Miraflores 253, San Vicente de Cañete'),
