@@ -173,4 +173,4 @@ VALUES
 ('Ana Guerra Solano', 'ana.guerra@gmail.com', '981526321', 'Sopa Seca de Gallina', 'Necesito 4 platos');
 
 /* Listar los registros de la tabla PEDIDO */
-SELECT * FROM PEDIDO;
+SELECT * FROM Pedido;
