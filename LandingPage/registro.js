@@ -11,6 +11,8 @@ var opcion = '';
 btnCrear.addEventListener('click', () => {
     console.log("Acción de listar activada");
     opcion = 'crear';
+	alert(" ¡¡Pedido Enviado!! ");
+	
 });
 
 formArticulo.addEventListener('submit',
