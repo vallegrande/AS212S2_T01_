@@ -580,7 +580,7 @@ section {
 .blogs .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 150px;
+    gap: 35px;
 }
 
 .blogs .box-container .box {
@@ -612,7 +612,7 @@ section {
 }
 
 .blogs .box-container .box .content .title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 2.0;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -628,14 +628,16 @@ section {
 .blogs .box-container .box .content span {
     color: rgba(0, 0, 0, 0.836);
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 
 }
 
+
+
 .blogs .box-container .box .content p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 1.8;
-    color: rgb(0, 0, 0);
+    color: rgb(45, 44, 44);
     padding: 1rem 0;
 }
 
