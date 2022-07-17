@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon connect.js"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vallegrande/AS212S2_T01_POULETMONT.git"
@@ -22,6 +22,6 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.19"
   }
 }

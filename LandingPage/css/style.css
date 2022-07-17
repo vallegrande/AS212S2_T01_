@@ -85,7 +85,7 @@ section {
  
 }
 
-}
+
 
 .btn:hover {
     letter-spacing: .2rem;
@@ -217,7 +217,7 @@ section {
     }
 }
 
-< !-- estilos slider ---->
+<!-- estilos slider ---->
 .slider {
     width: 100%;
     height: 600px;
