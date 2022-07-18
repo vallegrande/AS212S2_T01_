@@ -16,6 +16,8 @@
     <script src="https://js.cx/libs/animate.js"></script>
     <script src="path/to/anime.min.js"></script>
 
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
@@ -496,6 +498,45 @@
         }
     </script>
 
+
+    <!-- Cursor custom -->
+
+    <div id="cursor">
+        <div class="cursorr"> 
+            <img src="/imagenes/estrella.png">
+        </div>
+    </div>
+    <style>
+        #cursor {
+            width: 10px;
+            height: 10px;
+            position: fixed;
+            transition: 0s;
+        }
+        .cursorr img{
+            position: relative;
+            transition: 0s;
+            max-width: 40px;
+            max-height: 40px;
+            left: -16px;
+            top: -11px;
+            z-index: -99999999;
+            filter: opacity(70%);
+        }
+    </style>
+
+    <script type="text/javascript">
+        var cursor = document.getElementById(
+            'cursor');
+        document.addEventListener('mousemove'
+            , function (e) {
+                var x = e.clientX;
+                var y = e.clientY;
+                cursor.style.left = x + "px"
+                cursor.style.top = y + "px"
+            });
+    </script>
+
     <!-- footer section starts  -->
 
     <section class="footer">
@@ -530,6 +571,7 @@
     </script>
     <script src="/js/script.js"></script>
     <script src="/registro.js"></script>
+
 
 
 </body>
