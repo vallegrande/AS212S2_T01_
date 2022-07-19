@@ -6,6 +6,15 @@ window.addEventListener('load', () => {
     contenedor_loader.style.visibility = 'hidden'
 })
 
+
+
+
+
+
+
+
+
+
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
